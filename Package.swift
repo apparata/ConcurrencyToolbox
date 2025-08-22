@@ -1,4 +1,4 @@
-// swift-tools-version:5.3
+// swift-tools-version:5.10
 
 import PackageDescription
 
@@ -6,14 +6,10 @@ let package = Package(
     name: "ConcurrencyToolbox",
     platforms: [
         // Relevant platforms.
-        .iOS(.v13), .macOS(.v10_15), .tvOS(.v13)
+        .iOS(.v15), .macOS(.v12), .tvOS(.v15), .visionOS(.v1)
     ],
     products: [
         .library(name: "ConcurrencyToolbox", targets: ["ConcurrencyToolbox"])
-    ],
-    dependencies: [
-        // It's a good thing to keep things relatively
-        // independent, but add any dependencies here.
     ],
     targets: [
         .target(
